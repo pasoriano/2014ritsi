@@ -1,0 +1,6 @@
+lat	lon	title	description	icon	iconSize	iconOffset
+37.9137842 -4.7217981	Title Aulario	Description one	ritsi.jpeg 24,24	0,-24
+-4.7217981 37.9137842 	Title Aulario	Description one	ritsi.jpeg 24,24	0,-24
+2,4	my aqua title	my aqua description	
+42,-71	my purple title	my purple description<br/>is great.	http://www.openlayers.org/api/img/zoom-world-mini.png
+50,10	my orange title	my orange description
