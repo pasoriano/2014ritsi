@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Leaflet Quick Start Guide Example</title>
+	<title>RITSI Ejemplo OSM con Leaflet</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.2/leaflet.css" />
@@ -53,14 +53,14 @@ var LeafIcon = L.Icon.extend({
 
 		var popup = L.popup();
 
-		// function onMapClick(e) {
-		// 	popup
-		// 		.setLatLng(e.latlng)
-		// 		.setContent("Coordenadas " + e.latlng.toString())
-		// 		.openOn(map);
-		// }
+		function onMapClick(e) {
+			popup
+				.setLatLng(e.latlng)
+				.setContent("Coordenadas:<br>" + e.latlng.toString())
+				.openOn(map);
+		}
 
-		// map.on('click', onMapClick);
+		map.on('click', onMapClick);
 
 	</script>
 </body>

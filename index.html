@@ -827,24 +827,25 @@ license="http://opendatacommons.org/licenses/odbl/1-0/">
 <h3>p3: APIS externas para añadir teselas de OSM</h3>
 <p><a href="http://wiki.openstreetmap.org/wiki/Deploying_your_own_Slippy_Map">JavaScript map libraries</a>. </p>
 <ul>
-	<li> <a href="http://openlayers.org/" target="_blank"><strong>Openlayers 2.</strong></a>
-	Cliente Web-GIS ligero construido con clases Javascript, sin dependencia de servidores de mapas concretos. Librería madura y amplia, gran soporte de protocolos y formatos, no muy buena para móviles. <a href="http://jsfiddle.net/pasoriano/pB9kc/1/embedded/result/" target="_blank">Ejemplo</a></li>
+	<li> <a href="http://openlayers.org/" target="_blank"><strong>Openlayers 2.</strong></a> Cliente Web-GIS ligero construido con clases Javascript, sin dependencia de servidores de mapas concretos. Librería madura y amplia, gran soporte de protocolos y formatos, no muy buena para móviles.
 	<li><a href="http://leafletjs.com/" target="_blank"><strong>Leaflet.</strong></a>
-	Funciona de manera eficiente en las principales plataformas de escritorio y móviles, aprovechando las ventajas del HTML5 y CSS3 en los navegadores modernos, sin dejar de ser accesibles a los más antiguos. Librería pequeña y rápida, óptima para móviles. <a href="http://jsfiddle.net/pasoriano/2xHN8/1/embedded/result/" target="_blank">Ejemplo</a></li>
+	Funciona de manera eficiente en las principales plataformas de escritorio y móviles, aprovechando las ventajas del HTML5 y CSS3 en los navegadores modernos, sin dejar de ser accesibles a los más antiguos. Librería pequeña y rápida, óptima para móviles. <a href="http://sigdeletras.com/2014ritsi/doc/p3/leaftlet.html" target="_blank">Ejemplo</a></li>
 	<li><a href="http://mapstore.geo-solutions.it/mapstore/" target="_blank"><strong>Mapstore.</strong></a> Desarrollado para crear, guardar, buscar y compartir de una manera sencilla e intuitiva mashups creados con contenido de fuentes del servidor como Google Maps, OpenStreetMap.</li>
 </ul>
 </section>
+
 
 <!-- p3 -->
 <section>
 <h3>p3: Extraer / Exportar datos OSM</h3>
 	<ul>
-	<li>Desde OMS</li>
+	<li>Desde el visor de OMS</li>
+	<li>Fuera de OSM</li>
+	<ul>
 		<li><a href="http://planet.openstreetmap.org/">Planeta OSM</a>. Copias actualizadas regularmente de la base de datos completa de OpenStreetMap</li>
 		<li><a href="http://download.geofabrik.de/">Geofabrik</a>. Extractos actualizados regularmente de los continentes, países, y ciudades seleccionadas</li>
 		<li><a href="http://metro.teczno.com/">Extractos de Metro</a>. Extractos de las ciudades principales del mundo y sus alrededores</li>
 		<li><a href="http://overpass-turbo.eu/">Overpass Turbo</a>  Descargar este cuadro delimitador desde una réplica de la base de datos de OpenStreetMap.</li>
-		<li><a href="http://tools.geofabrik.de/">Otras</a></li>
 	</ul>
 </section>
 
@@ -852,9 +853,9 @@ license="http://opendatacommons.org/licenses/odbl/1-0/">
 <section>
 <h3>p3: Extraer datos desde la web OSM</h3>
 	<ul>
-		<li>Los datos se exportan en formato OSM (parecido a xml). Ver datos OSM</li>
-		<li>Los datos OSM se pueden convertir otros formatos GIS o Postgres/PostGIS. Se puede usar <a href="http://wiki.openstreetmap.org.index.php/Osm2pgsql"><strong>osm2pgsql</strong></a></li>
-		<li>Permite  trabajar con ellos en un SIG, e incluso directamente en formato OMS con QGis</li>
+		<li>Los datos se exportan en formato OSM.</li>
+		<li>Los datos OSM se pueden convertir otros formatos GIS (shp) o Postgres/PostGIS. Se puede usar <a href="http://wiki.openstreetmap.org.index.php/Osm2pgsql"><strong>osm2pgsql</strong></a></li>
+		<li>Permite  trabajar con ellos en un SIG, e incluso directamente en formato OMS con QGIS</li>
 	</ul>
 </section>
 
@@ -862,14 +863,39 @@ license="http://opendatacommons.org/licenses/odbl/1-0/">
 <section>
 <h3>p3: Extraer datos desde Overpass</h3>
 	<ul>
-		<li><a href="http://overpass-turbo.eu/">Overpass Turbo</a>  Descargar este cuadro delimitador desde una réplica de la base de datos de OpenStreetMap.</li>
+		<li><a href="http://overpass-turbo.eu/">Overpass Turbo</a></li>
+		<li>Muy rápida e intuitiva</li>
+		<li>En diferentes formatos</li>
+		<li>Permite guardar como Gist como formato GeoJson</li>
 	</ul>
 </section>
-
-<!-- p3 -->
 <section>
-<h3>p3: Herramientas</h3>
-	<p>http://osmtools.de/osmlinks/</p>
+<h3>p3: Extraer datos desde Overpass</h3>
+	<ul>
+		<li>Ejemplo 1: Centros sanitarios que estén en Córdoba</li>
+		<li>Ejemplo 2: Farmacias que estén a 500m de hospitales/centros de salud</li>
+	</ul>
+</section>
+<section>
+<h3>p3: Extraer datos desde Overpass</h3>
+
+<p><img width="800" src="img/p3_overpass.png" alt="OverpassTurbo"><p>
+<small><a href="http://overpass-turbo.eu/s/2T3" target="_blank">OverpassTurbo. Farmacias que estén a 500m de hospitales/centros de salud</a></small>
+</section>
+</section>
+
+<section>
+<section data-markdown data-background="img/osm.png"  data-background-size="80%" >
+	<script type="text/template">
+	<div class="presentacion">
+		<br>
+		<h1>¡Gracias!</h1>
+		<h2>OpenStreetMap. Geoinformación por y para todos</h2>
+		<p><strong>Patricio J. Soriano</strong></p>
+		<br>
+		
+		</div>
+	</script>
 </section>
 </section>
 
