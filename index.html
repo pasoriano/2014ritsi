@@ -104,18 +104,31 @@ S notas
 </section>
 			
 <!-- 1/1 Esquema del Taller -->
-<section data-markdown>
-<script type="text/template">
+<section>
+
 <h2>Esquema del Taller</h2><br><br>
-
-1. Charla sobre OMS
-2. Taller
-	- *Usando OMS*
-	- *Mejorando OSM*
-	- *Trabajando con OSM*
-
-</script>
+<ol>
+	<li>Charla sobre OpenStreetMap</li>
+	<li>Taller</li>
+	<ul>
+		<li>P1 Usando OMS</li>
+		<li>P2 Mejorando OSM</li>
+		<li>P3 Trabajando con OSM</li>
+	</ul>
+</ol>
 </section> 
+<!-- 1/2 Agradecimientos -->
+<section>
+
+<h2>Agradecimientos</h2><br><br>
+	<ul>
+		<li>Óscar Zorrilla de <a href="https://twitter.com/osmburgos" target="_blank">@osmburgos</a> y <a href="http://www.openstreetmap.es/" target="_blank">openstreetmap.es</a></li>
+		<li><a href="jorgesanz.net/" target="_blank">Jorge Sanz</a> Geoinquietos Valencia / OSGeo</li>
+		<li>Ander Pijoan y Cruz Enrique Borges de <a href="http://www.deustotech.deusto.es/cs/Satellite/ingenieria/es/deustotech-0" target="_blank">Deustotech Universidad de Deusto</a></li>
+		<li>Jaume Figueras<a href="http://inlab.fib.upc.edu/" target="_blank"> FIB UPC</a></li>
+		<li>Editores y colaboradores del <a href="http://wiki.openstreetmap.org/" target="_blank">Wiki de OpenStreetMap</a></li>
+	</ul>
+</section>
 </section> <!-- 1/ Presentación-->
 
 <section>  <!-- 2/ Inicio section IG, mapas informatizació  -->
@@ -527,8 +540,199 @@ S notas
 
 
 <section><!--p2 -->
+<!-- p2/01 -->
 <section>
-<h2>p1: Mejorar OSM</h2>
+<h2>P2: Mejorar OSM</h2>
+<p><strong>Fuentes de datos</strong></p>
+	<ul>
+		<li><strong>Trazas GPS</strong>.  Sirven como base para dibujar manualmente las líneas que representarán nuevos elementos cartográficos. Formato GPX en WGS84 Lat/Lon.</li>
+		<li><a href="http://walking-papers.org/"><strong>Walking Papers</strong></a>. Se generan e imprimen para tomar detalles de zonas.</li>
+		<li><strong>Foto, vídeo y audio</strong></li>
+		<li><strong>Fotografía aérea / Servicios WMS</strong>. Ej. Bing, PNOA, Canarias, ITACyL, Baleares..</li>
+		<li><strong>Trabajos de importación</strong>. Ej.<a href="http://wiki.openstreetmap.org/wiki/Cat2Osm">Cat2OSM2</a></li>
+	</ul>
+</section>
+
+<!-- p2/02 -->
+<section>
+<h3>P2: Nodos, líneas y relaciones</h3>
+	<ul>
+		<li><strong>Nodos (nodes)</strong>: Puntos definidos por su latitud y su longitud. en segmentos o solos. (ej. restaurante)</li>
+		<li><strong>Vías (ways)</strong>: Líneas que unen dos o más nodos (ej. carretera). Pueden estar cerradas (ej. edificios, usos del suelo, límites administrativos)</li>
+		<li><strong>Relaciones</strong>: Agrupan elementos como nodos y/o vías y definen relaciones(ej. áreas con líneas compartidas, "islas", restricciones de giro)</li>
+	</ul>
+
+<aside class="notes">
+	Primitivas gráficas
+	<li><strong>Nodos (nodes)</strong>: Puntos definidos por su latitud y su longitud. Pueden utilizarse como principio y final de los segmentos o, en ocasiones, solos.</li>
+	<li><strong>Vías (ways)</strong>: Líneas que unen dos o más nodos (ej. carretera). </li>
+	<li><strong>Vías cerradas</strong> Se utilizan para cartografiar áreas (ej. edificios, usos del suelo, límites administrativos).</li>
+	<li><strong>Relaciones</strong>: Puede agrupar a otros elementos como nodos y/o vías, así como otras relaciones entre sí. (ej. áreas con líneas compartidas, "islas", restricciones de giro)</li>
+</aside>
+</section>
+
+<section>
+	<h3>P2: Nodos, líneas y relaciones</h3>
+		<p><img width="700" src="img/p2_primitivas_graficas.png" alt=""><p>
+</section>
+
+
+<!-- p2/03 -->
+<section>
+	<h3>P2: Atributos</h3>
+		<ul>
+			<li>Una vez que terminamos de editar añadimos propiedades a los elementos gráficos.</li>
+			<li>Las propiedades o etiquetas (tags) son pares de clave- valor como por ejemplo <em>highway=motorway</em>.</li>
+			<li>Existen muchas etiquetas y pueden proponerse más. </li>
+			<li>Toda la información se encuentra en el <a href="http://wiki.openstreetmap.org/wiki/Map_Features">wiki Map_Features</a></li>
+		</ul>
+</section>
+
+<!-- p2/03 -->
+<section>
+	<h3>P2: Atributos</h3>
+		<p><img width="700" src="img/p2_mapfeatures.png" alt=""><p>
+</section>
+
+<!-- p2/04 -->
+<section>
+	<h3>P2: Edición con ID</h3>
+		<ul>
+			<li><a href="https://www.openstreetmap.org/user/new">Alta</a> o inicio de sesión.</li>
+			<!-- <li>Editores. <a href="http://wiki.openstreetmap.org/wiki/ES:Video_tutorials">Videos</a></li> -->
+			<li>Usar el editor web <a href="http://wiki.openstreetmap.org/wiki/ES:ID">ID</a>.</li>
+			<li>Completar datos del <a href="https://www.openstreetmap.org/#map=17/37.91600/-4.71625">Campus de Rabanales</a></li>
+				<ul>
+					<li>Incluir Hospital Clínico Veterinario</li>
+					<li>Completar calle SCAI</li>
+				</ul>
+		</ul>
+</section>
+<!-- p2/04 -->
+<section>
+	<h3>P2: Edición con ID</h3>
+		<p><a href="http://www.openstreetmap.org" target="_blank"><img width="800" src="img/p2_editor_id.png" alt="Ir a OSM"></a><p>
+</section>
+
+<!-- p2/07 -->
+<section>
+	<h3>P2: Edición con JOSM</h3>
+		<ul>
+			<li>Usar el editor de escritorio <strong>JOSM</strong>. Manual básico en <a href="http://learnosm.org/es/beginner/start-josm"><em>LearnOSM</em></a> y  <a href="http://wiki.openstreetmap.org/wiki/ES:JOSM">+Info</a>.</li>
+			<li>Añadiremos información de la barriada de Villarrubia</li>
+				<ul>
+					<li>Añadir el atributos al centro de salud</li>
+					<li>Nombres de calles, direcciones, restricciones</li>
+					<li>Mejoraremos elementos de la plaza: fuente, cabina, árboles</li>
+					<li>Añadiremos la farmacia</li>
+					<li>Dibujaremos el colegio</li>
+				</ul>
+		</ul>
+</section>
+
+<section>
+	<h3>P2: Edición con JOSM</h3>
+		<p><img width="700" src="img/p2_walking_villarrubia.png" alt=""><p>
+</section>
+
+
+<!-- p2/09 -->
+<section>
+
+<h3>P2: Instalación con JOSM</h3>
+<ol>
+	<li><a href="https://josm.openstreetmap.de/">Descargar</a> e instalar y configurar preferencias (F12)</li>
+	<li>Localizar y descargar la zona de edición. También podríamos usar el <i>walking paper</i>.</li>
+	<li>Añadir ortofoto Bing uotras imágenes de apoyo</li>
+	<li>Editar</li>
+	<li>Validar</li>
+	<li>Subir</li>
+</ol>
+</section>
+
+<!-- p2/10 -->
+<section>
+<h3>P2: Edición con JOSM. Ver otros ejemplos</h3>
+<p><pre><code>
+			&quot;addr:housenumber&quot;: &quot;1&quot;,
+			&quot;addr:street&quot;: &quot;Calle Río Tajo&quot;,
+			&quot;amenity&quot;: &quot;hospital&quot;,
+			&quot;name&quot;: &quot;Hospital Valencia al Mar&quot;,
+			&quot;wheelchair&quot; =&quot;yes&quot;,
+			&quot;emergency&quot;=&quot;no&quot;,
+
+</code></pre>
+</p>
+<small>Atributos asociados al Hospital Valencia al Mar</small>
+</section>
+
+<!-- p2/11 -->
+<section>
+	<h3>P2: Edición con JOSM. Map Features</h3>
+	<ul>
+		<li><strong>Plaza</strong> (<em>way</em>)
+			<ul>
+			<li>Tipo <a href="http://wiki.openstreetmap.org/wiki/Tag:highway%3Dpedestrian">highway=pedestrian</a>
+				<ul>
+					<li>Sentido de la calle</li>
+					<li>Velocidad</li>
+				</ul>
+			</li>
+			<li>Nombre [name=Plaza de los Ríos]</li>
+			<li>Fuente de uso ornamental <a href="http://wiki.openstreetmap.org/wiki/Tag:amenity%3Dfountain">amenity=fountain</a></li>
+			<li>Teléfono público <a href="http://wiki.openstreetmap.org/wiki/Tag:amenity%3Dtelephone">amenity:telephone</a></li>
+			</ul>
+		</li>
+	</ul>
+</section>
+
+<section>
+<h3>P2: Edición con JOSM. Map Features</h3>
+	<ul>
+		<li><p><strong>Centro de salud</strong> (<em>way</em>). Fuente de datos - <a href="http://www.juntadeandalucia.es/servicioandaluzdesalud/centros/Detalle.asp?IdCentroAnt=8782&amp;IdCentro=24375&amp;CodTipoCentro=&amp;CodPostal=&amp;Municipio=&amp;Provincia=">SAS</a></p>
+			<ul>
+				<li>Edificio [building=yes]</li>
+				<li><a href="http://wiki.openstreetmap.org/wiki/Tag:amenity%3Dclinic">amenity=clinic</a></li>
+				<li>Dirección <a href="http://wiki.openstreetmap.org/wiki/ES:Key:addr">Key:addr</a>, Teléfono, Web</li>
+				<li>Silla de ruedas <a href="http://wiki.openstreetmap.org/wiki/ES:Key:wheelchair">wheelchair</a></li>
+			</ul>
+		</li>
+		
+	</ul>
+</section>
+<!-- p2/11 -->
+<section>
+<h3>P2: Edición con JOSM. Map Features</h3>
+	<ul>
+		<li><p><strong>Farmacia</strong> (<em>node</em>)</p>
+			<ul>
+				<li><a href="http://wiki.openstreetmap.org/wiki/Tag:amenity%3Dpharmacy">amenity:pharmacy</a></li>
+				<li>Medicamentos con receta médica se suele añadir <i>dispensing=yes</i></li>
+			</ul>
+		</li>
+	</ul>
+</section>
+<!-- p2/11 -->
+<section>
+<h3>P2: Edición con JOSM. Map Features</h3>
+	<ul>
+		<li><p><strong>Colegio</strong> (<em>way</em>)</p>
+			<ul>
+				<li>Edificio building=yes</li>
+				<li><a href="http://wiki.openstreetmap.org/wiki/Tag:amenity%3Dschool">amenity=school</a></li>
+				<li>Dirección <a href="http://wiki.openstreetmap.org/wiki/ES:Key:addr">Key:addr</a>, Teléfono, Web.</li>
+				<li>Entradas (<em>nodos sobre línea exterior de edificio</em>).
+				<ul>
+					<li><em>entrance=main</em></li>
+					<li><em>entrance=yes</em> for secondary entries</li>
+					<li><em>entrance=emergenc</em>y for one-way out of the building in case of emergency</li>
+					<li><em>entrance=service</em> used only by employees or for delivering.</li>
+				</ul>
+				</li>
+				<li>Pistas deportivas <a href="http://wiki.openstreetmap.org/wiki/Tag:leisure%3Dpitch">leisure=pitch</a	></li>
+			</ul>
+		</li>
+	</ul>
 </section>
 </section>
 
