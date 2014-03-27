@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Leaflet Quick Start Guide Example</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.2/leaflet.css" />
+	   <style>
+   html, body, #map {
+      height:100%;
+      width:100%;
+      padding:0px;
+      margin:0px;
+   } 
+   p {font: 14px/1.5 "Helvetica Neue",Arial,Helvetica,sans-serif;
+   }
+   </style>
+</head>
+<body>
+	<div id="map"></div>
+
+	<script src="http://cdn.leafletjs.com/leaflet-0.7.2/leaflet.js"></script>
+	<script>
+
+		var map = L.map('map').setView([37.9137842, -4.7217981], 16);
+
+	L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '© <a href="http://openstreetmap.org">OpenStreetMap</a> contributors',
+            maxZoom: 18
+         }).addTo(map);
+
+var LeafIcon = L.Icon.extend({
+    options: {
+        
+        iconSize:     [45, 40],
+        popupAnchor:  [-3, -6] 
+        
+        
+    }
+});
+
+	var ritsi = new LeafIcon({iconUrl: 'ritsi_2.png'});
+	
+	L.icon = function (options) {
+    return new L.Icon(options);
+};
+
+
+
+		L.marker([37.9137842, -4.7217981], {icon:ritsi}).addTo(map)
+			.bindPopup("<p><img src=\"ritsi.jpeg\"</p><p><b>Bienvenidos al #CongresoRITSI!</b></p>").openPopup();
+
+
+		var popup = L.popup();
+
+		// function onMapClick(e) {
+		// 	popup
+		// 		.setLatLng(e.latlng)
+		// 		.setContent("Coordenadas " + e.latlng.toString())
+		// 		.openOn(map);
+		// }
+
+		// map.on('click', onMapClick);
+
+	</script>
+</body>
+</html>
