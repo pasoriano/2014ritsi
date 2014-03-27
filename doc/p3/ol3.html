@@ -14,18 +14,18 @@
       }
     </style>
     </head>
-<body>
+    <body>
   <div id="mapdiv"></div>
   <script src="http://www.openlayers.org/api/OpenLayers.js"></script>
   <script>
     map = new OpenLayers.Map("mapdiv");
     map.addLayer(new OpenLayers.Layer.OSM());
  
-    var pois = new OpenLayers.Layer.Text("My Points",{
-        location:"./markers.txt",
-        projection: map.displayProjection
-    });
-    map.addLayer(pois)
+    var pois = new OpenLayers.Layer.Text( "My Points",
+                    { location:"./textfile.txt",
+                      projection: map.displayProjection
+                    });
+    map.addLayer(pois);
  // create layer switcher widget in top right corner of map.
     var layer_switcher= new OpenLayers.Control.LayerSwitcher({});
     map.addControl(layer_switcher);

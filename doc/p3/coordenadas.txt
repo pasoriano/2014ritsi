@@ -1,3 +1,2 @@
-lat  lon title   description iconSize    iconOffset  icon
-37.9137842   -4.7217981  title   description 21,25       0,0     blue
--4.7217981   37.9137842  title   description 21,25       0,0     orange
+lat	lon	title	description	iconSize	iconOffseticon
+37.9137842 -4.7217981 title description 21,25 -10,-25 http://www.openlayers.org/dev/img/marker.png
