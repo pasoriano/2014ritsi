@@ -1,3 +1,0 @@
-lat	lon	title	description	icon	iconSize	iconOffset
-48.9459301	9.6075669	Title One	Description one	Ol_icon_red_example.png 24,24	0,-24
--4.721798173290054	37.91378429828988 Title Two	Description http://sigdeletras.com/2014ritsi/doc/p3/Ol_icon_red_example.png	16,16	-8,-8	
