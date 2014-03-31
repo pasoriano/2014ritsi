@@ -1,2 +1,0 @@
-lat	lon	title	description	iconSize	iconOffseticon
-37.9137842 -4.7217981 title description 21,25 0,0 http://www.openlayers.org/dev/img/marker.png
