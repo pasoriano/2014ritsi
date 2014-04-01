@@ -5,6 +5,11 @@
   font-weight: normal;
   font-style: normal; }
 
+@media print {
+.noPrint {
+    display:none;
+  }
+}
 
 .presentacion {
 	background-color: #f9f5d9; 
